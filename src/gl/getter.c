@@ -249,14 +249,14 @@ EXPORT const GLubyte* APIENTRY_GL4ES gl4es_glGetString(GLenum name) {
             BuildExtensionsList();
             return glstate->extensions;
 		case GL_VENDOR:
-			return (GLubyte *)"ptitSeb";
+			return (GLubyte *)"ptitSeb/SonicMastr";
 		case GL_RENDERER:
-			return (GLubyte *)"GL4ES wrapper";
+			return (GLubyte *)"GL4ES4VITA wrapper";
 		case GL_SHADING_LANGUAGE_VERSION:
             if(globals4es.gl==21)
-            return (GLubyte *)"1.20 via gl4es";
+				return (GLubyte *)"1.20 via gl4es4vita";
             else if(globals4es.gl==20)
-                return (GLubyte *)"1.10 via gl4es";
+                return (GLubyte *)"1.10 via gl4es4vita";
 			return (GLubyte *)"";
         case GL_PROGRAM_ERROR_STRING_ARB:
             return (GLubyte*)glstate->glsl->error_msg;

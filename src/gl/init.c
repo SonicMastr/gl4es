@@ -372,10 +372,10 @@ void initialize_gl4es() {
         SHUT_LOGD("Override version string with \"%s\" (should be in the form of \"1.x\")\n", env_version);
     }
     if(env_version) {
-        snprintf(globals4es.version, 49, "%s gl4es wrapper %d.%d.%d", env_version, MAJOR, MINOR, REVISION);
+        snprintf(globals4es.version, 49, "%s gl4es4vita wrapper %d.%d.%d", env_version, MAJOR, MINOR, REVISION);
         SHUT_LOGD("Targeting OpenGL %s\n", env_version);
     } else {
-        snprintf(globals4es.version, 49, "%d.%d gl4es wrapper %d.%d.%d", globals4es.gl/10, globals4es.gl%10, MAJOR, MINOR, REVISION);
+        snprintf(globals4es.version, 49, "%d.%d gl4es4vita wrapper %d.%d.%d", globals4es.gl/10, globals4es.gl%10, MAJOR, MINOR, REVISION);
         SHUT_LOGD("Targeting OpenGL %d.%d\n", globals4es.gl/10, globals4es.gl%10);
     }
 
