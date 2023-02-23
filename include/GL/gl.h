@@ -27,7 +27,7 @@
 #ifndef __gl_h_
 #define __gl_h_
 
-#if defined(__EMSCRIPTEN__) || defined(__APPLE__) || defined(__psp2__)
+#if defined(__EMSCRIPTEN__) || defined(__APPLE__) || defined(__psp2__) || defined(__vita__)
 #define USE_MGL_NAMESPACE    1
 #define GL_GLEXT_PROTOTYPES  1
 #define MANGLE(x)            gl4es_gl##x
